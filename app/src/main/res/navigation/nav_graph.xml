@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashsreenFragment">
+
+    <fragment
+        android:id="@+id/splashsreenFragment"
+        android:name="com.example.myproject.Package.SplashsreenFragment"
+        android:label="fragment_splashsreen"
+        tools:layout="@layout/fragment_splashsreen" >
+        <action
+            android:id="@+id/action_splashsreenFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.myproject.Package.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_morningresultFragment"
+            app:destination="@id/morningresultFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_oldresultFragment"
+            app:destination="@id/oldresultFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_morningoldFragment"
+            app:destination="@id/morningoldFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/morningresultFragment"
+        android:name="com.example.myproject.Package.MorningresultFragment"
+        android:label="fragment_morningresult"
+        tools:layout="@layout/fragment_morningresult" />
+    <fragment
+        android:id="@+id/oldresultFragment"
+        android:name="com.example.myproject.Package.OldresultFragment"
+        android:label="fragment_oldresult"
+        tools:layout="@layout/fragment_oldresult" />
+    <fragment
+        android:id="@+id/morningoldFragment"
+        android:name="com.example.myproject.Package.MorningoldFragment"
+        android:label="fragment_morningold"
+        tools:layout="@layout/fragment_morningold" />
+</navigation>
