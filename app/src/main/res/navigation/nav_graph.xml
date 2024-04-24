@@ -12,6 +12,7 @@
         tools:layout="@layout/fragment_splashsreen" >
         <action
             android:id="@+id/action_splashsreenFragment_to_homeFragment"
+            app:popUpToInclusive="true"
             app:destination="@id/homeFragment" />
     </fragment>
     <fragment
@@ -26,8 +27,8 @@
             android:id="@+id/action_homeFragment_to_oldresultFragment"
             app:destination="@id/oldresultFragment" />
         <action
-            android:id="@+id/action_homeFragment_to_morningoldFragment"
-            app:destination="@id/morningoldFragment" />
+            android:id="@+id/action_homeFragment_to_barchartFragment"
+            app:destination="@id/barchartFragment" />
     </fragment>
     <fragment
         android:id="@+id/morningresultFragment"
@@ -40,8 +41,8 @@
         android:label="fragment_oldresult"
         tools:layout="@layout/fragment_oldresult" />
     <fragment
-        android:id="@+id/morningoldFragment"
-        android:name="com.example.myproject.Package.MorningoldFragment"
-        android:label="fragment_morningold"
-        tools:layout="@layout/fragment_morningold" />
+        android:id="@+id/barchartFragment"
+        android:name="com.example.myproject.Package.barchartFragment"
+        android:label="fragment_barchart"
+        tools:layout="@layout/fragment_barchart" />
 </navigation>

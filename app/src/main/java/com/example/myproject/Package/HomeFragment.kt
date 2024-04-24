@@ -31,9 +31,9 @@ class HomeFragment : Fragment() {
     }
     private fun registerevents(){
         binding.Morning.setOnClickListener {
-            Navcontrol.navigate(R.id.action_homeFragment_to_morningresultFragment)
-            binding.old.setOnClickListener {
-                Navcontrol.navigate(R.id.action_homeFragment_to_morningoldFragment)
+            Navcontrol.navigate(R.id.action_homeFragment_to_oldresultFragment)
+            binding.Barchart.setOnClickListener {
+                Navcontrol.navigate(R.id.action_homeFragment_to_barchartFragment)
             }
         }
     }

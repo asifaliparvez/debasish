@@ -25,7 +25,18 @@
         android:text="Old Result"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.515" />
+        app:layout_constraintVertical_bias="0.415" />
+
+    <Button
+        android:id="@+id/Barchart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Barchart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/old" />
 </androidx.constraintlayout.widget.ConstraintLayout>
